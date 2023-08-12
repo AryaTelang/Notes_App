@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:notes_app_second/screens/home.dart';
 import '../Constants.dart';
 
 Widget TrashCard(Function()? onTap, QueryDocumentSnapshot doc) {

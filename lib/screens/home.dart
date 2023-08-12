@@ -5,7 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:notes_app_second/screens/NewNoteScreen.dart';
 import 'package:notes_app_second/screens/ReadNote.dart';
 import 'package:notes_app_second/widget/noteCard.dart';
-
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'TrashPage.dart';
 
 class HomePage extends StatefulWidget {
@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
                       padding: EdgeInsets.all(10),
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisSpacing:
-                              16.0, // Adjust the horizontal spacing
+                              16.0,
                           mainAxisSpacing: 16.0,
                           crossAxisCount: 2),
                       children: snapshot.data!.docs
